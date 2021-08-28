@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack-a-Mole Game!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔨</text></svg>"
+    />
+  </head>
+  <body>
+    <div
+      class="title"
+      style="cursor: pointer"
+      onclick="window.location='https://github.com/Exy63'"
+    >
+      <img id="beardie2" src="assets/img/beardy2.png" />
+    </div>
+    <img class="rope" src="assets/img/rope.png" alt="rope" />
+    <div class="settings">
+      <button class="wood" id="new-game-button" onclick="newGame()">
+        New Game
+      </button>
+      <select class="wood" id="level" onchange="changeLevel()">
+        <option>Newbie</option>
+        <option>Beginner</option>
+        <option>Skilled</option>
+        <option>Advanced</option>
+        <option>Expert</option>
+        <option>GOD</option>
+        <option>Cheater...</option>
+      </select>
+    </div>
+
+    <img id="beardie" src="assets/img/beardy.png" />
+
+    <div class="branch">
+      <div class="branch-text">
+        YOUR SCORE: <span class="branchtext" id="score">0</span>
+      </div>
+      <div class="branch-text record-text" id="record-name-level">
+        GET TO THE TOP!
+      </div>
+    </div>
+    <div class="container">
+      <div class="hole">
+        <img class="dirt" src="assets/img/hole.png" alt="hole" /><img
+          class="mole"
+          id="mole1"
+          src="assets/img/mole.svg"
+          alt="mole"
+        />
+      </div>
+      <div class="hole">
+        <img class="dirt" src="assets/img/hole.png" alt="hole" /><img
+          class="mole"
+          id="mole2"
+          src="assets/img/mole.svg"
+          alt="mole"
+        />
+      </div>
+      <div class="hole">
+        <img class="dirt" src="assets/img/hole.png" alt="hole" /><img
+          class="mole"
+          id="mole3"
+          src="assets/img/mole.svg"
+          alt="mole"
+        />
+      </div>
+      <div class="hole">
+        <img class="dirt" src="assets/img/hole.png" alt="hole" /><img
+          class="mole"
+          id="mole4"
+          src="assets/img/mole.svg"
+          alt="mole"
+        />
+      </div>
+      <div class="hole">
+        <img class="dirt" src="assets/img/hole.png" alt="hole" /><img
+          class="mole"
+          id="mole5"
+          src="assets/img/mole.svg"
+          alt="mole"
+        />
+      </div>
+      <div class="hole">
+        <img class="dirt" src="assets/img/hole.png" alt="hole" /><img
+          class="mole"
+          id="mole6"
+          src="assets/img/mole.svg"
+          alt="mole"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>
